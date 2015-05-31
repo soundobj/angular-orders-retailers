@@ -1,0 +1,30 @@
+<div class="container" ng-show="$state.is('root.orders')">
+    <div class="row">
+        <h2 translate>ORDERS</h2>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" ng-model="ordersCtrl.checkBoxModel" ng-change="ordersCtrl.toggleLastMonthView()"> View last month's orders
+            </label>
+        </div>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead>
+                <th translate>ID</th>
+                <th translate>RETAILER</th>
+                <th translate>BUYER</th>
+                <th translate>DATE</th>
+                <th translate>TOTAL</th>
+                <th translate>STATUS</th>
+            </thead>
+            <tr ng-repeat="order in ordersCtrl.displayOrders">
+                <td>{{order.id}}</td>
+                <td>{{ordersCtrl.getRetailerName(order.retailer_id)}}</td>
+                <td>{{ordersCtrl.getBuyerName(order.retail_buyer_id)}}</td>
+                <td>{{order.order_date}}</td>
+                <td>{{order.total}}</td>
+                <td>{{order.status}}</td>
+            </tr>
+        </table>
+    </div>
+</div>

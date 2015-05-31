@@ -1,0 +1,52 @@
+{
+  "retailers": [
+    {
+      "id": 1,
+      "name": "Super Boutique",
+      "retail_buyers": [
+        {
+          "id": 1,
+          "name": "Julien",
+          "email": "julien@superbrand.com"
+        },
+        {
+          "id": 2,
+          "name": "Gordon",
+          "email": "gordon@superbrand.com"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Cow Bell Ltd",
+      "retail_buyers": [
+        {
+          "id": 3,
+          "name": "Miriam",
+          "email": "miriam@cowbell.com"
+        },
+        {
+          "id": 4,
+          "name": "Zac",
+          "email": "zac@cowbell.com"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Clothes Inc",
+      "retail_buyers": [
+        {
+          "id": 5,
+          "name": "Luke",
+          "email": "luke@clothesinc.com"
+        },
+        {
+          "id": 6,
+          "name": "Carlos",
+          "email": "carlos@clothesinc.com"
+        }
+      ]
+    }
+  ]
+}

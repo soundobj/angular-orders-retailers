@@ -1,0 +1,22 @@
+<div class="container" ng-show="$state.is('root.retailers')">
+    <div class="row">
+        <h2 translate>RETAIL_BUYERS</h2>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead>
+                <th translate>NAME</th>
+                <th translate>RETAILER</th>
+                <th translate>EMAIL</th>
+            </thead>
+            <tbody ng-repeat-start="retailer in retailersCtrl.retailers">
+                <tr ng-repeat="buyer in retailer.retail_buyers">
+                    <td>{{retailer.name}}</td>
+                    <td>{{buyer.name}}</td>
+                    <td>{{buyer.email}}</td>
+                </tr>
+            </tbody>
+            <tbody ng-repeat-end></tbody>
+        </table>
+    </div>
+</div>
